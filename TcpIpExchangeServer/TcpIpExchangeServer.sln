@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpIpExchangeServer", "TcpIpExchangeServer.csproj", "{8816167F-E076-41FD-9760-1B8DEE3B2E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTcpIpExchangeServer", "TestTcpIpExchangeServer\TestTcpIpExchangeServer.csproj", "{458ED57D-D9D2-4539-B64E-44CE9484822A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8816167F-E076-41FD-9760-1B8DEE3B2E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8816167F-E076-41FD-9760-1B8DEE3B2E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8816167F-E076-41FD-9760-1B8DEE3B2E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8816167F-E076-41FD-9760-1B8DEE3B2E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458ED57D-D9D2-4539-B64E-44CE9484822A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458ED57D-D9D2-4539-B64E-44CE9484822A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458ED57D-D9D2-4539-B64E-44CE9484822A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458ED57D-D9D2-4539-B64E-44CE9484822A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
