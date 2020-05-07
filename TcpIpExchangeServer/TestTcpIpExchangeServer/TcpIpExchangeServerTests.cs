@@ -18,11 +18,11 @@ namespace TestTcpIpExchangeServer
             serverThread.Start();
 
 
-            string response_1 = TcpIpExchangeClient.SendMessage("asl@gmail.com/psantosl@gmail.com/108.23.142.12");
+            string response_1 = TcpIpExchangeClient.SendMessage("asl@tst.com/psl@tst.com/108.23.142.12");
             Console.WriteLine(response_1);
             Assert.AreEqual("NOT_FOUND".Trim(), response_1);
             
-            string response_2 = TcpIpExchangeClient.SendMessage("psantosl@gmail.com/asl@gmail.com/107.13.142.12");
+            string response_2 = TcpIpExchangeClient.SendMessage("psl@tst.com/asl@tst.com/107.13.142.12");
             Console.WriteLine(response_2);
             Assert.AreEqual("108.23.142.12".Trim(), response_2);
         }
@@ -32,9 +32,9 @@ namespace TestTcpIpExchangeServer
         {
             string requestedMail, receivedMail, ip;
             TcpIpExchangeServer.TcpIpExchangeServer server = new TcpIpExchangeServer.TcpIpExchangeServer(defaultPort);
-            TcpIpExchangeServer.TcpIpExchangeServer.GetEntryFromRequest("asl@gmail.com/psantosl@gmail.com/107.13.142.12", out requestedMail, out receivedMail, out ip);
-            Assert.AreEqual("asl@gmail.com",requestedMail);
-            Assert.AreEqual("psantosl@gmail.com",receivedMail);
+            TcpIpExchangeServer.TcpIpExchangeServer.GetEntryFromRequest("asl@tst.com/psl@tst.com/107.13.142.12", out requestedMail, out receivedMail, out ip);
+            Assert.AreEqual("asl@tst.com",requestedMail);
+            Assert.AreEqual("psl@tst.com",receivedMail);
             Assert.AreEqual("107.13.142.12",ip);
         }
     }
